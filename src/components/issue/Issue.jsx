@@ -19,7 +19,7 @@ const Signup = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:3002/issue/create", {
+      const res = await axios.post("https://code-hub-backend-xi.vercel.app/issue/create", {
         title: title,
         description: description,
         repository: repository,

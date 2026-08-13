@@ -34,7 +34,7 @@ const Createrepository = () => {
 
       console.log("Sending:", data);
 
-      const res = await axios.post("http://localhost:3002/repo/create", data);
+      const res = await axios.post("https://code-hub-backend-xi.vercel.app/repo/create", data);
       setLoading(false);
       alert("Repository created successfully"),
       window.location.href = "/";
