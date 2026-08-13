@@ -1,0 +1,208 @@
+/* Main profile page */
+.profile-page-wrapper {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  padding: 40px;
+  box-sizing: border-box;
+
+  display: flex;
+  gap: 40px;
+}
+
+.user-profile-section {
+  width: 280px;
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+/* Profile image */
+.profile-image {
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background-color: #21262d;
+  border: 1px solid #30363d;
+
+  box-sizing: border-box;
+}
+
+
+/* Username */
+.name {
+  width: 100%;
+  text-align: center;
+}
+
+.name h3 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* Follow button */
+.follow-btn {
+  width: 180px;
+  max-width: 100%;
+
+  height: 38px;
+
+  border: 1px solid #30363d;
+  border-radius: 6px;
+
+  background-color: #238636;
+  color: white;
+
+  cursor: pointer;
+}
+
+.follow-btn:hover {
+  background-color: #2ea043;
+}
+
+
+/* Followers */
+.follower {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  color: #8b949e;
+}
+
+.follower p {
+  margin: 0;
+}
+
+#logout{
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  width: 100px;
+  height: 40px;
+  color:white;
+  background-color: red;
+  border-radius: 5px;
+}
+
+.heat-map-section {
+  flex: 1;
+  min-width: 0;
+
+  overflow-x: auto;
+}
+
+
+@media screen and (max-width: 900px) {
+  .profile-page-wrapper {
+    padding: 30px;
+    gap: 25px;
+    position: relative;
+  }
+
+  .user-profile-section {
+    width: 230px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name h3 {
+    font-size: 21px;
+  }
+
+  .follow-btn {
+    width: 160px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #logout{
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+  }
+  .profile-page-wrapper {
+    padding: 20px;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+    position: relative;
+  }
+
+  .user-profile-section {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .profile-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .name h3 {
+    font-size: 20px;
+  }
+
+  .follow-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .follower {
+    gap: 15px;
+  }
+
+  .heat-map-section {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  #logout{
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+  }
+  .profile-page-wrapper {
+    padding: 15px;
+    position: relative;
+  }
+
+  .profile-image {
+    width: 110px;
+    height: 110px;
+  }
+
+  .name h3 {
+    font-size: 18px;
+  }
+
+  .follower {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+#logout:hover {
+  border: 1px solid white;
+}
